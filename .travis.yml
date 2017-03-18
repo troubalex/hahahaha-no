@@ -1,0 +1,12 @@
+language: ruby
+deploy:
+  provider: s3
+  access_key_id: AKIAJNISDWEECPD4MZRA
+  secret_access_key:
+    secure: UGxRKDLkXvjQ7avgrBotV95FEt712W2s4TIFYscGlehScRA8KDAv/7E+M3SR/ATkqiLKcDEAN+MqF/h6e6hyWIBykwMFxKOgTnNxIF5zqqiTa/JjR2q/4n/qyuC34zxzfRNA+fX+Z+VE19zVBqM3nUyc+pcooQzAmiYAuSdylNJaNCopheabF3uKwyrjXUuLRtfD13EgpnQnISaPmLuETILP3ztkh365VCZ6FcgNSiyHQ2DtDDA/iaI3nj2SSlR1r5uSHRnogj1lfx+8QlgIe0Nr3dTG2Jv6xZKdn274Ivce+/edRdJA2wYqXYfKRTs1RCh/90wPJu0pBLNHwWFPMiqkeNPbETEP5xdJaWQqVks5ZVA9ZiN8kzrnA9maBNH7X+SGDtQZbol/PkVMcHebQkjaxjz6CzHTCHLa5kXDlx8RfMe6mDbIMaFv8c8yn+BlLy2i1Ruqalsw5pOwHhbXEEOoBCfv6jswzb2+5R9R5li0patde454GwCSysyWj3kihKz2KMX63tagVEHmSENpU1deXsYzEFHIpOGaNqYaUpdKZeblQhYLZJXo7N2A3F4tMhToHgWZYjmakGel22bCvAEl4ZHkHaCIP7QbB52FL/x4QvQh7aM6NbJhnpbTXyWg+vB+dH/5dA1hsKdMyZ3XsZAZEo7uI2osY0bx9udVMHM=
+  bucket: hahahaha.no
+  skip_cleanup: true
+  region: eu-west-1
+  acl: public_read
+  on:
+    repo: troubalex/hahahaha-no
