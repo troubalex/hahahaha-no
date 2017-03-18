@@ -1,0 +1,44 @@
+body {
+  align-items: center;
+  color: #586B50;
+  display: flex;
+  /*flex-direction: column;*/
+  font-family: 'Roboto Mono', monospace;
+  height: 100%;
+  justify-content: center;
+  margin: 0;
+}
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+footer {
+  bottom: 1em;
+  position: absolute;
+}
+
+a {
+  transition: color 200ms ease;
+}
+a, a:visited {
+  color: #586B50;
+}
+a:hover, a:active, a:focus {
+  color: #08D49A;
+}
+.haha {
+  margin-bottom: 3.1em;
+  width: 70%;
+}
+.no {
+  width: 50%;
+}
+.emoji {
+   height: 1em;
+   width: 1em;
+   margin: 0 .05em 0 .1em;
+   vertical-align: -0.1em;
+}
