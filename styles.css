@@ -32,10 +32,19 @@ a:hover, a:active, a:focus {
   color: #08D49A;
 }
 .haha {
-  margin-bottom: 3.1em;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
   width: 70%;
 }
-.no {
+.letter {
+  max-width: 12.5%
+}
+.letter:not(:first-child) {
+  margin-left: 1.2%;
+}
+.nope {
   width: 50%;
 }
 .emoji {
@@ -43,4 +52,73 @@ a:hover, a:active, a:focus {
    width: 1em;
    margin: 0 .05em 0 .1em;
    vertical-align: -0.1em;
+}
+
+@keyframes bounce {
+  0% {
+    transform: rotateX(-8deg) rotateZ(12deg);
+    transform-origin: 50% 50%;
+  }
+  50% {
+    transform: scale(1.05);
+    transform-origin: 50% 50%;
+  }
+  100% {
+    transform: rotateX(8deg) rotateZ(-12deg);
+    transform-origin: 50% 50%;
+  }
+}
+.letter:nth-child(even) {
+  animation: bounce 300ms linear alternate infinite;
+}
+.letter:nth-child(odd) {
+  animation: bounce 300ms linear alternate-reverse infinite;
+}
+.letter:nth-child(2) {
+  animation-delay: 60ms;
+}
+.letter:nth-child(3) {
+  animation-delay: 120ms;
+}
+.letter:nth-child(4) {
+  animation-delay: 180ms;
+}
+.letter:nth-child(5) {
+  animation-delay: 240ms;
+}
+.letter:nth-child(6) {
+  animation-delay: 300ms;
+}
+.letter:nth-child(7) {
+  animation-delay: 360ms;
+}
+.letter:nth-child(8) {
+  animation-delay: 420ms;
+}
+
+@keyframes shake-horizontal {
+  0%,
+  10% {
+    transform: translateX(0);
+  }
+  1%,
+  3%,
+  5%,
+  7% {
+    transform: translateX(-10px);
+  }
+  2%,
+  4%,
+  6% {
+    transform: translateX(10px);
+  }
+  8% {
+    transform: translateX(8px);
+  }
+  9% {
+    transform: translateX(-8px);
+  }
+}
+.no {
+	animation: shake-horizontal 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite;
 }
